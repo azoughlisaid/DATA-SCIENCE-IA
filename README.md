@@ -5,8 +5,13 @@ Il s’appuie sur nos historiques internes et ces indices pour alimenter le proc
 Principales responsabilités & technologies : 
 
 🗄️ ETL & centralisation : extraction depuis SharePoint et/ou SAP ERP internes.
+
 🧹 Préparation des données : nettoyage, imputation et enrichissement via Python & Excel
+
 🤖 Modélisation : conception et entraînement de XGBoost (multivarié) et SARIMA (univarié)
+
 🚀 Déploiement : API Flask/FastAPI pour le scoring et application Streamlit pour l’exploration
+
 📊 Visualisation : tableau de bord final sous PowerBI
+
 🔍 Interprétabilité & suivi : rapports SHAP et tracking des expériences avec MLflow.
