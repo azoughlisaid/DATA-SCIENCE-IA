@@ -15,3 +15,29 @@ Principales responsabilités & technologies :
 📊 Visualisation : tableau de bord final sous PowerBI
 
 🔍 Interprétabilité & suivi : rapports SHAP et tracking des expériences avec MLflow.
+
+              [Données historiques]
+          (indices matières + prix ERP)
+                     │
+                     ▼
+         [Modèle LSTM pour chaque matière]
+      (Prévision des indices mensuels 2026)
+                     │
+                     ▼
+     [Calcul des indices pondérés par article]
+     (pondération selon la composition article)
+                     │
+                     ▼
+    [Construction du jeu de données tabulaire]
+  (prix 2022–2025, fournisseur, région, indice)
+                     │
+                     ▼
+     [Modèle XGBoost (entraînement sur 2022–2024)]
+     (validation sur 2025, tuning, MAE < 2 €)
+                     │
+                     ▼
+         [Prédiction des prix unitaires 2026]
+                     │
+                     ▼
+   [Intégration dans Power BI – tableaux de bord]
+(filtres dynamiques, alertes, visualisation achat)
